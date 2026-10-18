@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>brat generator</title>
+<link rel="icon" href="data:image/png;base64,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">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#fff;--fg:#111;--mut:#666;--line:#ddd;--card:#f4f4f4}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111;--fg:#f2f2f2;--mut:#999;--line:#333;--card:#1c1c1c}}
+:root[data-theme="dark"]{--bg:#111;--fg:#f2f2f2;--mut:#999;--line:#333;--card:#1c1c1c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.4 Arial,Helvetica,sans-serif}
+main{max-width:560px;margin:0 auto;padding:16px}
+h1{font-size:20px;margin:0 0 12px;text-transform:lowercase}
+canvas{width:100%;aspect-ratio:1;display:block;border:1px solid var(--line)}
+textarea{width:100%;height:80px;margin:12px 0;padding:10px;font:inherit;background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:8px}
+.row{display:flex;align-items:center;gap:10px;margin:8px 0;flex-wrap:wrap}
+.row label{min-width:84px;color:var(--mut)}
+.row input[type=range]{flex:1;min-width:120px}
+button,select{font:inherit;padding:8px 12px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer}
+.sw{width:36px;height:36px;border-radius:50%;border:2px solid var(--line);padding:0}
+#out{display:none;margin-top:12px}#out img{width:100%;display:block}
+small{color:var(--mut)}
+</style></head><body><main>
+<h1>brat generator</h1>
+<canvas id="c" width="1080" height="1080"></canvas>
+<textarea id="t">brat and it's the same but there's three more songs so it's not</textarea>
+<div class="row"><label>background</label>
+<button class="sw" data-bg="#8ACE00" style="background:#8ACE00" aria-label="green"></button>
+<button class="sw" data-bg="#ffffff" style="background:#fff" aria-label="white"></button>
+<button class="sw" data-bg="#000000" data-fg="#8ACE00" style="background:#000" aria-label="black"></button>
+<input type="color" id="bgc" value="#ffffff"></div>
+<div class="row"><label>text color</label>
+<button class="sw" data-tc="#000000" style="background:#000" aria-label="black text"></button>
+<button class="sw" data-tc="#ffffff" style="background:#fff" aria-label="white text"></button>
+<button class="sw" data-tc="#8ACE00" style="background:#8ACE00" aria-label="green text"></button>
+<input type="color" id="fgc" value="#000000"></div>
+<div class="row"><label>blur</label><input type="range" id="blur" min="0" max="12" step="0.5" value="0"></div>
+<div class="row"><label>narrowness</label><input type="range" id="sx" min="60" max="100" value="80"></div>
+<div class="row"><label>text size</label><input type="range" id="fs" min="40" max="400" value="190"></div>
+<div class="row"><label>line spacing</label><input type="range" id="lh" min="85" max="130" value="100"></div>
+<div class="row"><button id="dl">download PNG</button><button id="cp">copy image</button><small id="msg"></small></div>
+<div id="out"><small>If the download didn't start, long-press (phone) or right-click (computer) to save:</small><img id="o" alt="your brat image"></div>
+</main>
+<script>
+const S=1080,c=document.getElementById('c'),ctx=c.getContext('2d'),$=id=>document.getElementById(id);
+let bg='#ffffff',fg='#000000';
+const FONT=fs=>`${fs}px "Arial Narrow","Liberation Sans Narrow","Helvetica Neue",Arial,sans-serif`;
+function wrap(words,fs,avail){
+  ctx.font=FONT(fs);const sp=ctx.measureText(' ').width,L=[];let cur=[],w=0;
+  for(const word of words){const ww=ctx.measureText(word).width;if(ww>avail)return null;
+    if(cur.length&&w+sp+ww>avail){L.push(cur);cur=[];w=0}
+    w+=(cur.length?sp:0)+ww;cur.push(word)}
+  if(cur.length)L.push(cur);return L}
+function draw(){
+  const words=$('t').value.trim().split(/\s+/).filter(Boolean),sx=$('sx').value/100,lh=$('lh').value/100,pad=S*0.045,box=S-2*pad,avail=box/sx;
+  ctx.setTransform(1,0,0,1,0,0);ctx.filter='none';ctx.fillStyle=bg;ctx.fillRect(0,0,S,S);
+  if(words.length){
+    let lo=6,hi=+$('fs').value,best=6;
+    while(lo<=hi){const m=(lo+hi)>>1,L=wrap(words,m,avail);
+      if(L&&L.length*m*lh<=box){best=m;lo=m+1}else hi=m-1}
+    const fs=best,L=wrap(words,fs,avail)||[words],total=L.length*fs*lh,y0=pad;
+    ctx.save();const b=+$('blur').value;if(b)ctx.filter=`blur(${b}px)`;
+    ctx.translate(pad,y0);ctx.scale(sx,1);ctx.font=FONT(fs);ctx.textBaseline='top';ctx.fillStyle=fg;
+    L.forEach((line,i)=>{const y=i*fs*lh;
+      if(line.length==1){ctx.fillText(line[0],0,y);return}
+      const ws=line.map(w=>ctx.measureText(w).width),gap=(avail-ws.reduce((a,b)=>a+b,0))/(line.length-1);
+      let x=0;line.forEach((w,j)=>{ctx.fillText(w,x,y);x+=ws[j]+gap})});
+    ctx.restore()}
+}
+document.querySelectorAll('[data-bg]').forEach(b=>b.onclick=()=>{bg=b.dataset.bg;fg=b.dataset.fg||'#000000';$('bgc').value=bg;$('fgc').value=fg;draw()});
+document.querySelectorAll('[data-tc]').forEach(b=>b.onclick=()=>{fg=b.dataset.tc;$('fgc').value=fg;draw()});
+$('bgc').oninput=e=>{bg=e.target.value;draw()};
+$('fgc').oninput=e=>{fg=e.target.value;draw()};
+['t','blur','sx','lh','fs'].forEach(id=>$(id).oninput=draw);
+$('dl').onclick=()=>{draw();c.toBlob(b=>{const u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download='brat.png';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),4000)},'image/png');
+  if(location.protocol!=='file:'){$('o').src=c.toDataURL('image/png');$('out').style.display='block'}};
+$('cp').onclick=async()=>{const m=$('msg');try{draw();const b=await new Promise(r=>c.toBlob(r,'image/png'));await navigator.clipboard.write([new ClipboardItem({'image/png':b})]);m.textContent='copied!'}catch(e){m.textContent='copy not available here'}setTimeout(()=>m.textContent='',2500)};
+draw();
+</script></body></html>
